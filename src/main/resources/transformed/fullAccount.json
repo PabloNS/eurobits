@@ -1,0 +1,70 @@
+{
+  "ccc": "3555320678",
+  "accountId": {
+    "bank": "9992",
+    "branch": "3555",
+    "controlDigits": "00",
+    "number": "3555320678",
+    "accountId": "99923555003555320678"
+  },
+  "balance": 495.49,
+  "alias": "Account 0",
+  "currency": "EUR",
+  "accountTransactions": [
+    {
+      "quantity": 0.0,
+      "relativeBalance": "495.49",
+      "operationDate": 1522879200000,
+      "valueDate": 1522879200000,
+      "description": "CINE0",
+      "reference": "",
+      "payee": "",
+      "payer": "",
+      "transactionType": "1"
+    },
+    {
+      "quantity": 0.0,
+      "relativeBalance": "495.49",
+      "operationDate": 1522879200000,
+      "valueDate": 1522879200000,
+      "description": "CINE0",
+      "reference": "",
+      "payee": "",
+      "payer": "",
+      "transactionType": "1"
+    },
+    {
+      "quantity": -69.0,
+      "relativeBalance": "495.49",
+      "operationDate": 1522879200000,
+      "valueDate": 1522879200000,
+      "description": "RECIBO PATRONATO DE RECAUDACION PROVINCIAL Nº# RECIBO 1234 &Ácentúadó$ REF.",
+      "reference": "",
+      "payee": "",
+      "payer": "",
+      "transactionType": "1"
+    },
+    {
+      "quantity": -69.0,
+      "relativeBalance": "564.49",
+      "operationDate": 1522879200000,
+      "valueDate": 1522879200000,
+      "description": "RECIBO PATRONATO DE RECAUDACION PROVINCIAL Nº# RECIBO 1234 &Ácentúadó$ REF.",
+      "reference": "",
+      "payee": "",
+      "payer": "",
+      "transactionType": "1"
+    },
+    {
+      "quantity": -69.0,
+      "relativeBalance": "633.49",
+      "operationDate": 1522879200000,
+      "valueDate": 1522879200000,
+      "description": "RECIBO PATRONATO DE RECAUDACION PROVINCIAL Nº# RECIBO 1234 &Ácentúadó$ REF.",
+      "reference": "",
+      "payee": "",
+      "payer": "",
+      "transactionType": "1"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "portfolioNumber" : "1234567",
+  "webAlias" : "Portfolio",
+  "currency" : "001",
+  "balance" : {
+    "amount": "2222.40",
+    "currency": "EUR"
+  },
+  "portfolioType" : "",
+  "valueDate" : "14/12/2016",
+  "performance" : "",
+  "PerformanceDescription" : "",
+  "yield" : {
+    "amount": "222.40",
+    "currency": "EUR"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "operationDate": "06/12/2021",
+  "valueDate": "06/12/2021",
+  "amount": {
+    "amount": "-50.00",
+    "currency": ""
+  },
+  "balance": {
+    "amount": "0.65",
+    "currency": ""
+  },
+  "transactionType": "1",
+  "description": "ENVIO A MOVIL -",
+  "reference": "672134341813",
+  "payer": "",
+  "payee": ""
+}

@@ -1,0 +1,2985 @@
+{
+  "aggregationInfo": {
+    "code": "R900",
+    "message": "X111101000100009",
+    "companies": [
+      ""
+    ],
+    "warnings": [],
+    "robotCode": "PRV77200009992"
+  },
+  "deposits": [
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "47",
+      "accountNumber": "8220418965",
+      "number": "0",
+      "balance": {
+        "amount": "228.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 8"
+    },
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "97",
+      "accountNumber": "4016933896",
+      "number": "0",
+      "balance": {
+        "amount": "302.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 3"
+    },
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "25",
+      "accountNumber": "6713560631",
+      "number": "0",
+      "balance": {
+        "amount": "556.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 0"
+    },
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "76",
+      "accountNumber": "8786135333",
+      "number": "0",
+      "balance": {
+        "amount": "688.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 4"
+    },
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "63",
+      "accountNumber": "4764063648",
+      "number": "0",
+      "balance": {
+        "amount": "234.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 5"
+    },
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "57",
+      "accountNumber": "9261652390",
+      "number": "0",
+      "balance": {
+        "amount": "599.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 6"
+    },
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "45",
+      "accountNumber": "7404019260",
+      "number": "0",
+      "balance": {
+        "amount": "648.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 2"
+    },
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "41",
+      "accountNumber": "9647299093",
+      "number": "0",
+      "balance": {
+        "amount": "483.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 7"
+    },
+    {
+      "bank": "",
+      "branch": "1101",
+      "controlDigits": "86",
+      "accountNumber": "8010894910",
+      "number": "0",
+      "balance": {
+        "amount": "611.00",
+        "currency": "EUR"
+      },
+      "interest": {
+        "rate": "0.250",
+        "type": "TAE"
+      },
+      "duration": {
+        "startDate": "15/02/2015",
+        "endDate": "15/02/2016"
+      },
+      "webAlias": "Eurobits Technologies - Deposits 1"
+    }
+  ],
+  "shares": [
+    {
+      "accountNumber": "5472877168",
+      "webAlias": "Eurobits Shares 3",
+      "balance": {
+        "amount": "437.00",
+        "currency": "EUR"
+      },
+      "transactions": [
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "12/12/2021",
+          "quantity": -335.79,
+          "unitPrice": {
+            "amount": "110.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-36936.90",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "11/12/2021",
+          "quantity": 458.24,
+          "unitPrice": {
+            "amount": "60.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "27494.40",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "13/12/2021",
+          "quantity": -370.69,
+          "unitPrice": {
+            "amount": "805.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-298405.45",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "12/12/2021",
+          "quantity": 519.07,
+          "unitPrice": {
+            "amount": "62.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "32182.34",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "11/12/2021",
+          "quantity": -255.58,
+          "unitPrice": {
+            "amount": "270.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-69006.60",
+            "currency": "EUR"
+          }
+        }
+      ],
+      "stocks": [
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "32.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "76.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        }
+      ]
+    },
+    {
+      "accountNumber": "9766924165",
+      "webAlias": "Eurobits Shares 0",
+      "balance": {
+        "amount": "94.00",
+        "currency": "EUR"
+      },
+      "transactions": [
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "12/12/2021",
+          "quantity": 628.5,
+          "unitPrice": {
+            "amount": "30.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "18855.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "11/12/2021",
+          "quantity": 135.04,
+          "unitPrice": {
+            "amount": "390.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "52665.60",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "13/12/2021",
+          "quantity": -790.77,
+          "unitPrice": {
+            "amount": "711.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-562237.47",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "12/12/2021",
+          "quantity": -862.46,
+          "unitPrice": {
+            "amount": "389.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-335496.94",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "11/12/2021",
+          "quantity": 599.27,
+          "unitPrice": {
+            "amount": "776.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "465033.52",
+            "currency": "EUR"
+          }
+        }
+      ],
+      "stocks": [
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "32.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "76.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        }
+      ]
+    },
+    {
+      "accountNumber": "7378525433",
+      "webAlias": "Eurobits Shares 2",
+      "balance": {
+        "amount": "694.00",
+        "currency": "EUR"
+      },
+      "transactions": [
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "12/12/2021",
+          "quantity": -404.25,
+          "unitPrice": {
+            "amount": "812.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-328251.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "11/12/2021",
+          "quantity": -340.98,
+          "unitPrice": {
+            "amount": "77.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-26255.46",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "13/12/2021",
+          "quantity": 97.0,
+          "unitPrice": {
+            "amount": "781.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "75757.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "12/12/2021",
+          "quantity": 256.34,
+          "unitPrice": {
+            "amount": "570.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "146113.80",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "11/12/2021",
+          "quantity": -479.14,
+          "unitPrice": {
+            "amount": "531.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-254423.34",
+            "currency": "EUR"
+          }
+        }
+      ],
+      "stocks": [
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "32.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "76.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        }
+      ]
+    },
+    {
+      "accountNumber": "8566398611",
+      "webAlias": "Eurobits Shares 5",
+      "balance": {
+        "amount": "804.00",
+        "currency": "EUR"
+      },
+      "transactions": [
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "12/12/2021",
+          "quantity": 298.69,
+          "unitPrice": {
+            "amount": "3.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "896.07",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "11/12/2021",
+          "quantity": 644.84,
+          "unitPrice": {
+            "amount": "58.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "37400.72",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "13/12/2021",
+          "quantity": -98.34,
+          "unitPrice": {
+            "amount": "688.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-67657.92",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "12/12/2021",
+          "quantity": -733.85,
+          "unitPrice": {
+            "amount": "323.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-237033.55",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "11/12/2021",
+          "quantity": 870.51,
+          "unitPrice": {
+            "amount": "863.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "751250.13",
+            "currency": "EUR"
+          }
+        }
+      ],
+      "stocks": [
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "32.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "76.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        }
+      ]
+    },
+    {
+      "accountNumber": "5790439797",
+      "webAlias": "Eurobits Shares 1",
+      "balance": {
+        "amount": "285.00",
+        "currency": "EUR"
+      },
+      "transactions": [
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "12/12/2021",
+          "quantity": -154.87,
+          "unitPrice": {
+            "amount": "735.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-113829.45",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "11/12/2021",
+          "quantity": 338.53,
+          "unitPrice": {
+            "amount": "624.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "211242.72",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "13/12/2021",
+          "quantity": 774.16,
+          "unitPrice": {
+            "amount": "670.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "518687.20",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "12/12/2021",
+          "quantity": 349.52,
+          "unitPrice": {
+            "amount": "233.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "81438.16",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "11/12/2021",
+          "quantity": 529.03,
+          "unitPrice": {
+            "amount": "625.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "330643.75",
+            "currency": "EUR"
+          }
+        }
+      ],
+      "stocks": [
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "32.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "76.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        }
+      ]
+    },
+    {
+      "accountNumber": "9058665493",
+      "webAlias": "Eurobits Shares 4",
+      "balance": {
+        "amount": "613.00",
+        "currency": "EUR"
+      },
+      "transactions": [
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "12/12/2021",
+          "quantity": 529.63,
+          "unitPrice": {
+            "amount": "441.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "233566.83",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "COMPRA DE TÍTULOS",
+          "market": "",
+          "name": "EBankinter",
+          "operationDate": "11/12/2021",
+          "quantity": 450.66,
+          "unitPrice": {
+            "amount": "117.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "52727.22",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "13/12/2021",
+          "quantity": -988.58,
+          "unitPrice": {
+            "amount": "2.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-1977.16",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "12/12/2021",
+          "quantity": -863.18,
+          "unitPrice": {
+            "amount": "687.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "-593004.66",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "VENTA",
+          "market": "",
+          "name": "Trx KO",
+          "operationDate": "11/12/2021",
+          "quantity": 24.72,
+          "unitPrice": {
+            "amount": "828.00",
+            "currency": "EUR"
+          },
+          "amount": {
+            "amount": "20468.16",
+            "currency": "EUR"
+          }
+        }
+      ],
+      "stocks": [
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "32.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "AC. ZELTIA",
+          "unitPrice": {
+            "amount": "5.32",
+            "currency": "EUR"
+          },
+          "quantity": "76.00",
+          "valuationDate": "10/04/2015",
+          "market": "MCV"
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        },
+        {
+          "name": "BANKIA",
+          "unitPrice": {
+            "amount": "42.84",
+            "currency": "EUR"
+          },
+          "quantity": "7.00",
+          "valuationDate": "29/03/2014",
+          "market": ""
+        }
+      ]
+    }
+  ],
+  "funds": [
+    {
+      "bank": "",
+      "branch": "1234",
+      "controlDigits": "12",
+      "accountNumber": "1267735833",
+      "balance": {
+        "amount": "850.00",
+        "currency": "EUR"
+      },
+      "number": "0",
+      "fundName": "Eurobits Funds 0",
+      "webAlias": "Eurobits Funds 0",
+      "performance": "4.41",
+      "performanceDescription": "",
+      "yield": {
+        "amount": "0.00",
+        "currency": "EUR"
+      },
+      "quantity": "10.00",
+      "valueDate": "14/12/2021",
+      "transactions": [
+        {
+          "operationType": "0",
+          "operationDescription": "MOVILIZACION HACIA DENTRO",
+          "operationDate": "14/12/2021",
+          "fundName": "B EVOLUCION PRUDEN",
+          "quantity": "959.15",
+          "unitPrice": "0.6",
+          "operationAmount": {
+            "amount": "575.49",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "bank": "",
+      "branch": "1234",
+      "controlDigits": "12",
+      "accountNumber": "5091768775",
+      "balance": {
+        "amount": "256.00",
+        "currency": "EUR"
+      },
+      "number": "0",
+      "fundName": "Eurobits Funds 1",
+      "webAlias": "Eurobits Funds 1",
+      "performance": "4.41",
+      "performanceDescription": "",
+      "yield": {
+        "amount": "0.00",
+        "currency": "EUR"
+      },
+      "quantity": "10.00",
+      "valueDate": "14/01/2022",
+      "transactions": [
+        {
+          "operationType": "0",
+          "operationDescription": "MOVILIZACION HACIA DENTRO",
+          "operationDate": "14/12/2021",
+          "fundName": "B EVOLUCION PRUDEN",
+          "quantity": "436.58",
+          "unitPrice": "8.88",
+          "operationAmount": {
+            "amount": "3876.83",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "SUSCRIPCION",
+          "operationDate": "13/12/2021",
+          "fundName": "ALHAMBRA",
+          "quantity": "-483.40",
+          "unitPrice": "3.19",
+          "operationAmount": {
+            "amount": "-1542.05",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "Recibo Pepemobile",
+          "operationDate": "12/12/2021",
+          "fundName": "SANTANDER ACCIONES EURO FI",
+          "quantity": "533.13",
+          "unitPrice": "7.24",
+          "operationAmount": {
+            "amount": "3859.86",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "SUSCRIPC",
+          "operationDate": "11/12/2021",
+          "fundName": "022-LIBERBANK CARTERA MODERADA",
+          "quantity": "-461.93",
+          "unitPrice": "5.19",
+          "operationAmount": {
+            "amount": "-2397.42",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "SUSCRIPCION",
+          "operationDate": "10/12/2021",
+          "fundName": "A.C. BONOS FINANCIEROS F.I.",
+          "quantity": "5.40",
+          "unitPrice": "6.67",
+          "operationAmount": {
+            "amount": "36.02",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "Asignación de clase de entrada",
+          "operationDate": "09/12/2021",
+          "fundName": "INVERSABADELL 10, FI-BASE",
+          "quantity": "538.00",
+          "unitPrice": "7.79",
+          "operationAmount": {
+            "amount": "4191.02",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "bank": "",
+      "branch": "1234",
+      "controlDigits": "12",
+      "accountNumber": "4483293254",
+      "balance": {
+        "amount": "429.00",
+        "currency": "EUR"
+      },
+      "number": "0",
+      "fundName": "Eurobits Funds 2",
+      "webAlias": "Eurobits Funds 2",
+      "performance": "4.41",
+      "performanceDescription": "",
+      "yield": {
+        "amount": "0.00",
+        "currency": "EUR"
+      },
+      "quantity": "10.00",
+      "valueDate": "14/02/2022",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "MOVILIZACION HACIA DENTRO",
+          "operationDate": "14/12/2021",
+          "fundName": "B EVOLUCION PRUDEN",
+          "quantity": "974.08",
+          "unitPrice": "5.91",
+          "operationAmount": {
+            "amount": "5756.81",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "SUSCRIPCION",
+          "operationDate": "13/12/2021",
+          "fundName": "ALHAMBRA",
+          "quantity": "-836.23",
+          "unitPrice": "2.93",
+          "operationAmount": {
+            "amount": "-2450.15",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "Recibo Pepemobile",
+          "operationDate": "12/12/2021",
+          "fundName": "SANTANDER ACCIONES EURO FI",
+          "quantity": "-57.39",
+          "unitPrice": "3.82",
+          "operationAmount": {
+            "amount": "-219.23",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "0",
+          "operationDescription": "SUSCRIPC",
+          "operationDate": "11/12/2021",
+          "fundName": "022-LIBERBANK CARTERA MODERADA",
+          "quantity": "-842.40",
+          "unitPrice": "8.22",
+          "operationAmount": {
+            "amount": "-6924.53",
+            "currency": "EUR"
+          }
+        }
+      ]
+    }
+  ],
+  "loans": [
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "65",
+      "accountNumber": "123440004111",
+      "webAlias": "Eurobits Technologies - Loan 4",
+      "accountType": "H",
+      "period": {
+        "startDate": "14/08/2021",
+        "endDate": "14/04/2022"
+      },
+      "initialBalance": {
+        "amount": "75500.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "907",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "73",
+      "accountNumber": "123470007111",
+      "webAlias": "Eurobits Technologies - Loan 7",
+      "accountType": "P",
+      "period": {
+        "startDate": "14/05/2021",
+        "endDate": "14/07/2022"
+      },
+      "initialBalance": {
+        "amount": "34700.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "165",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "92",
+      "accountNumber": "123490009111",
+      "webAlias": "Eurobits Technologies - Loan 9",
+      "accountType": "H",
+      "period": {
+        "startDate": "14/03/2021",
+        "endDate": "14/09/2022"
+      },
+      "initialBalance": {
+        "amount": "59400.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "129",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "61",
+      "accountNumber": "123430003111",
+      "webAlias": "Eurobits Technologies - Loan 3",
+      "accountType": "H",
+      "period": {
+        "startDate": "14/09/2021",
+        "endDate": "14/03/2022"
+      },
+      "initialBalance": {
+        "amount": "42200.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "547",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "66",
+      "accountNumber": "123420002111",
+      "webAlias": "Eurobits Technologies - Loan 2",
+      "accountType": "P",
+      "period": {
+        "startDate": "14/10/2021",
+        "endDate": "14/02/2022"
+      },
+      "initialBalance": {
+        "amount": "90300.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "135",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "10",
+      "accountNumber": "123450005111",
+      "webAlias": "Eurobits Technologies - Loan 5",
+      "accountType": "H",
+      "period": {
+        "startDate": "14/07/2021",
+        "endDate": "14/05/2022"
+      },
+      "initialBalance": {
+        "amount": "41800.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "126",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "76",
+      "accountNumber": "123480008111",
+      "webAlias": "Eurobits Technologies - Loan 8",
+      "accountType": "P",
+      "period": {
+        "startDate": "14/04/2021",
+        "endDate": "14/08/2022"
+      },
+      "initialBalance": {
+        "amount": "18500.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "205",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "01",
+      "accountNumber": "123400000111",
+      "webAlias": "Eurobits Technologies - Loan 0",
+      "accountType": "P",
+      "period": {
+        "startDate": "14/12/2021",
+        "endDate": "14/12/2021"
+      },
+      "initialBalance": {
+        "amount": "43200.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "260",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "85",
+      "accountNumber": "123410001111",
+      "webAlias": "Eurobits Technologies - Loan 1",
+      "accountType": "H",
+      "period": {
+        "startDate": "14/11/2021",
+        "endDate": "14/01/2022"
+      },
+      "initialBalance": {
+        "amount": "24700.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "480",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    },
+    {
+      "bank": "9992",
+      "branch": "1540",
+      "controlDigits": "52",
+      "accountNumber": "123460006111",
+      "webAlias": "Eurobits Technologies - Loan 6",
+      "accountType": "P",
+      "period": {
+        "startDate": "14/06/2021",
+        "endDate": "14/06/2022"
+      },
+      "initialBalance": {
+        "amount": "34300.0000",
+        "currency": "EUR"
+      },
+      "debt": {
+        "amount": "152.41",
+        "currency": "EUR"
+      },
+      "repayment": {
+        "amount": "22.75",
+        "currency": "EUR"
+      },
+      "repaymentDate": "",
+      "revisionDate": "",
+      "loanRates": {
+        "interest": "198",
+        "margin": "",
+        "referenceIndex": "",
+        "totalCancellation": "3.00",
+        "partialCancellation": "3.00"
+      }
+    }
+  ],
+  "creditCards": [
+    {
+      "cardType": "Credito",
+      "cardNumber": "509177******9312",
+      "disposed": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "available": {
+        "amount": "477.00",
+        "currency": "EUR"
+      },
+      "limit": {
+        "amount": "6000.00",
+        "currency": "EUR"
+      },
+      "expirationDate": "",
+      "webAlias": "Visa Electron",
+      "paymentDueDate": "",
+      "paymentAmount": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "billingPeriodStart": "",
+      "billingPeriodEnd": "",
+      "transactions": [
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-523.70",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-38.15",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "693.88",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-946.54",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "713.96",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "cardType": "Credito",
+      "cardNumber": "361116******8535",
+      "disposed": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "available": {
+        "amount": "788.00",
+        "currency": "EUR"
+      },
+      "limit": {
+        "amount": "6000.00",
+        "currency": "EUR"
+      },
+      "expirationDate": "",
+      "webAlias": "Visa Electron",
+      "paymentDueDate": "",
+      "paymentAmount": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "billingPeriodStart": "",
+      "billingPeriodEnd": "",
+      "transactions": [
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "25.69",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "277.25",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-911.80",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "923.44",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "576.99",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "cardType": "Credito",
+      "cardNumber": "311887******6394",
+      "disposed": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "available": {
+        "amount": "492.00",
+        "currency": "EUR"
+      },
+      "limit": {
+        "amount": "6000.00",
+        "currency": "EUR"
+      },
+      "expirationDate": "",
+      "webAlias": "Visa Electron",
+      "paymentDueDate": "",
+      "paymentAmount": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "billingPeriodStart": "",
+      "billingPeriodEnd": "",
+      "transactions": [
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "816.12",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "40.07",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "311.80",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "613.13",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "193.05",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "cardType": "Credito",
+      "cardNumber": "920039******4376",
+      "disposed": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "available": {
+        "amount": "87.00",
+        "currency": "EUR"
+      },
+      "limit": {
+        "amount": "6000.00",
+        "currency": "EUR"
+      },
+      "expirationDate": "",
+      "webAlias": "Visa Electron",
+      "paymentDueDate": "",
+      "paymentAmount": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "billingPeriodStart": "",
+      "billingPeriodEnd": "",
+      "transactions": [
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-518.11",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-9.06",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-51.42",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "872.26",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-55.67",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "cardType": "Credito",
+      "cardNumber": "601883******7222",
+      "disposed": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "available": {
+        "amount": "390.00",
+        "currency": "EUR"
+      },
+      "limit": {
+        "amount": "6000.00",
+        "currency": "EUR"
+      },
+      "expirationDate": "",
+      "webAlias": "Visa Electron",
+      "paymentDueDate": "",
+      "paymentAmount": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "billingPeriodStart": "",
+      "billingPeriodEnd": "",
+      "transactions": [
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "974.47",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "447.03",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-825.12",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "141.02",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-11.61",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "cardType": "Credito",
+      "cardNumber": "881466******2130",
+      "disposed": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "available": {
+        "amount": "753.00",
+        "currency": "EUR"
+      },
+      "limit": {
+        "amount": "6000.00",
+        "currency": "EUR"
+      },
+      "expirationDate": "",
+      "webAlias": "Visa Electron",
+      "paymentDueDate": "",
+      "paymentAmount": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "billingPeriodStart": "",
+      "billingPeriodEnd": "",
+      "transactions": [
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "480.60",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "894.40",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-824.13",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-839.88",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "775.89",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "cardType": "Credito",
+      "cardNumber": "717248******5840",
+      "disposed": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "available": {
+        "amount": "736.00",
+        "currency": "EUR"
+      },
+      "limit": {
+        "amount": "6000.00",
+        "currency": "EUR"
+      },
+      "expirationDate": "",
+      "webAlias": "Visa Electron",
+      "paymentDueDate": "",
+      "paymentAmount": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "billingPeriodStart": "",
+      "billingPeriodEnd": "",
+      "transactions": [
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "812.48",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "511.67",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "323.69",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "556.14",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "945.72",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        }
+      ]
+    },
+    {
+      "cardType": "Credito",
+      "cardNumber": "653656******7309",
+      "disposed": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "available": {
+        "amount": "35.00",
+        "currency": "EUR"
+      },
+      "limit": {
+        "amount": "6000.00",
+        "currency": "EUR"
+      },
+      "expirationDate": "",
+      "webAlias": "Visa Electron",
+      "paymentDueDate": "",
+      "paymentAmount": {
+        "amount": "",
+        "currency": "EUR"
+      },
+      "billingPeriodStart": "",
+      "billingPeriodEnd": "",
+      "transactions": [
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-424.74",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "627.48",
+            "currency": ""
+          },
+          "description": "Cine",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-458.90",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "374.04",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        },
+        {
+          "transactionType": "5",
+          "valueDate": "13/12/2021",
+          "amount": {
+            "amount": "-995.55",
+            "currency": ""
+          },
+          "description": "Gas Expenditures",
+          "comments": ""
+        }
+      ]
+    }
+  ],
+  "pensionPlans": [
+    {
+      "planNumber": "222240003334",
+      "planName": "DummyPlan2020 4",
+      "webAlias": "Eurobits PensionPlan 4",
+      "balance": {
+        "amount": "2.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "10/12/2021",
+      "startDate": "14/08/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-940.92",
+          "unitPrice": "-0.021",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-70.61",
+          "unitPrice": "-0.283",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-89.65",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-3994.80",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-127.43",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-5678.28",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "990.27",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "44126.43",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "planNumber": "222220003332",
+      "planName": "DummyPlan2020 2",
+      "webAlias": "Eurobits PensionPlan 2",
+      "balance": {
+        "amount": "72.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "12/12/2021",
+      "startDate": "14/10/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "132.9",
+          "unitPrice": "0.15",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "65.32",
+          "unitPrice": "0.306",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "979.93",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "43665.68",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-834.27",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-37175.07",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "29.65",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "1321.20",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "planNumber": "222230003333",
+      "planName": "DummyPlan2020 3",
+      "webAlias": "Eurobits PensionPlan 3",
+      "balance": {
+        "amount": "885.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "11/12/2021",
+      "startDate": "14/09/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-586.37",
+          "unitPrice": "-0.034",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-959.96",
+          "unitPrice": "-0.02",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "87.1",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "3881.18",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-927.82",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-41343.66",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "1.0",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "44.56",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "planNumber": "222210003331",
+      "planName": "DummyPlan2020 1",
+      "webAlias": "Eurobits PensionPlan 1",
+      "balance": {
+        "amount": "447.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "13/12/2021",
+      "startDate": "14/11/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-836.05",
+          "unitPrice": "-0.023",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-732.56",
+          "unitPrice": "-0.027",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "644.97",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "28739.86",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "576.24",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "25677.25",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "401.28",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "17881.04",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "planNumber": "222270003337",
+      "planName": "DummyPlan2020 7",
+      "webAlias": "Eurobits PensionPlan 7",
+      "balance": {
+        "amount": "913.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "07/12/2021",
+      "startDate": "14/10/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "259.48",
+          "unitPrice": "0.077",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-922.25",
+          "unitPrice": "-0.021",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "548.86",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "24457.20",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "971.04",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "43269.54",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "761.85",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "33948.04",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "planNumber": "222280003338",
+      "planName": "DummyPlan2020 8",
+      "webAlias": "Eurobits PensionPlan 8",
+      "balance": {
+        "amount": "427.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "06/12/2021",
+      "startDate": "14/09/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "823.97",
+          "unitPrice": "0.024",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "193.56",
+          "unitPrice": "0.103",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "403.47",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "17978.62",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "628.71",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "28015.32",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-229.19",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-10212.71",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "planNumber": "222250003335",
+      "planName": "DummyPlan2020 5",
+      "webAlias": "Eurobits PensionPlan 5",
+      "balance": {
+        "amount": "877.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "09/12/2021",
+      "startDate": "14/12/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "463.35",
+          "unitPrice": "0.043",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "429.06",
+          "unitPrice": "0.046",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "525.15",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "23400.68",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-631.63",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-28145.43",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-669.34",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-29825.79",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "planNumber": "222200003330",
+      "planName": "DummyPlan2020 0",
+      "webAlias": "Eurobits PensionPlan 0",
+      "balance": {
+        "amount": "349.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "14/12/2021",
+      "startDate": "14/12/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "593.84",
+          "unitPrice": "0.033",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "794.06",
+          "unitPrice": "0.025",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-346.84",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-15455.19",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-514.33",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-22918.54",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "500.22",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "22289.80",
+            "currency": "EUR"
+          }
+        }
+      ]
+    },
+    {
+      "planNumber": "222260003336",
+      "planName": "DummyPlan2020 6",
+      "webAlias": "Eurobits PensionPlan 6",
+      "balance": {
+        "amount": "154.00",
+        "currency": "EUR"
+      },
+      "unitPrice": "11.8",
+      "totalContribution": {
+        "amount": "1000.00",
+        "currency": "EUR"
+      },
+      "yearToDateContribution": {
+        "amount": "500.00",
+        "currency": "EUR"
+      },
+      "planPerformance": {
+        "total": "0.2",
+        "yearToDate": "0.16",
+        "lastTwelveMonths": "0.15"
+      },
+      "yield": {
+        "amount": "100.00",
+        "currency": "EUR"
+      },
+      "quantity": "28",
+      "valueDate": "08/12/2021",
+      "startDate": "14/11/2021",
+      "transactions": [
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "447.89",
+          "unitPrice": "0.044",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN EXTRAORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "278.46",
+          "unitPrice": "0.071",
+          "amount": {
+            "amount": "20.00",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "987.78",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "44015.48",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "-857.62",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "-38215.55",
+            "currency": "EUR"
+          }
+        },
+        {
+          "operationType": "1",
+          "operationDescription": "APORTACIÓN ORDINARIA",
+          "operationDate": "08/12/2021",
+          "quantity": "957.19",
+          "unitPrice": "44.56",
+          "amount": {
+            "amount": "42652.39",
+            "currency": "EUR"
+          }
+        }
+      ]
+    }
+  ]
+}

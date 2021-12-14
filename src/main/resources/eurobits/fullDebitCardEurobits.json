@@ -1,0 +1,22 @@
+{
+  "cardType" : "Debito",
+  "cardNumber" : "3480258576496472",
+  "disposed" : {
+    "amount": "0.00",
+    "currency": "EUR"
+  },
+  "expirationDate" : "31/12/9999",
+  "associatedAccount" : "",
+  "webAlias" : "Visa Electron",
+  "transactions" : [ {
+    "transactionType" : "4",
+    "valueDate" : "12/12/2016",
+    "description" : "Cine",
+    "amount" : {
+      "amount": "20.00",
+      "currency": "EUR"
+    },
+    "comments" : "",
+    "location" : "some location"
+  } ]
+}

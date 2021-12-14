@@ -1,0 +1,35 @@
+{
+  "cardType" : "Credito",
+  "cardNumber" : "4466371756561902",
+  "limit" : {
+    "amount": "6000.00",
+    "currency": "EUR"
+  },
+  "disposed" : {
+    "amount": "0.00",
+    "currency": "EUR"
+  },
+  "available" : {
+    "amount": "6000.00",
+    "currency": "EUR"
+  },
+  "expirationDate" : "31/12/9999",
+  "paymentDueDate" : "31/12/9999",
+  "paymentAmount" : {
+    "amount": "10.23",
+    "currency": "EUR"
+  },
+  "billingPeriodStart" : "31/12/9999",
+  "billingPeriodEnd" : "31/12/9999",
+  "webAlias" : "Visa Electron",
+  "transactions" : [ {
+    "transactionType" : "4",
+    "valueDate" : "12/12/2016",
+    "description" : "Cine",
+    "amount" : {
+      "amount": "30.00",
+      "currency": "EUR"
+    },
+    "comments" : ""
+  }]
+}

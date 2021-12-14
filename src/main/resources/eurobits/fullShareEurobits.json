@@ -1,0 +1,35 @@
+{
+  "accountNumber": "8083060087",
+  "webAlias" : "Eurobits Shares 8",
+  "balance": {
+    "amount": "278.65",
+    "currency": "EUR"
+  },
+  "stocks": [
+    {
+      "market": "MCV",
+      "name": "AC. ZELTIA",
+      "quantity": "-798.3",
+      "unitPrice": {
+        "amount": "1.11",
+        "currency": "EUR"
+      },
+      "valuationDate": "15/12/2016"
+    } ],
+  "transactions" : [ {
+    "operationType" : "0",
+    "operationDescription" : "COMPRA DE TÍTULOS",
+    "market" : "BME",
+    "name" : "EBankinter",
+    "operationDate" : "11/12/2016",
+    "quantity" : 3,
+    "unitPrice" : {
+      "amount": "5.55",
+      "currency": ""
+    },
+    "amount" : {
+      "amount": "17.65",
+      "currency": ""
+    }
+  }]
+}

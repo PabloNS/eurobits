@@ -1,0 +1,12 @@
+{
+  "bank": "2100",
+  "branch": "1986",
+  "controlDigits": "60",
+  "account": "0200201178",
+  "balance": {
+    "amount": "0.65",
+    "currency": "EUR"
+  },
+  "webAlias": "CUENTA IMAGIN",
+  "transactions": []
+}

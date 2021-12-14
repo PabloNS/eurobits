@@ -1,0 +1,28 @@
+{
+  "account": "5514583368",
+  "balance": {
+    "amount": "126.84",
+    "currency": "EUR"
+  },
+  "bank": "9992",
+  "branch": "5514",
+  "controlDigits": "21",
+  "transactions": [
+    {
+      "amount": {
+        "amount": "54.43",
+        "currency": ""
+      },
+      "balance": {
+        "amount": "22.00",
+        "currency": ""
+      },
+      "description": "Pago CARREFOUR HORTALEZA MADRID 28",
+      "operationDate": "15/12/2016",
+      "payee": "",
+      "payer": "",
+      "reference": "CARREFOUR HORTALEZA MADRID 28 ; Tarjeta :345678909876324",
+      "valueDate": "15/12/2016"
+    }
+  ]
+}

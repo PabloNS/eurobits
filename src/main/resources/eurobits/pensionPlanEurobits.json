@@ -1,0 +1,31 @@
+{
+  "balance": {
+    "amount": "221.76",
+    "currency": "EUR"
+  },
+  "planName": "DummyPlan2020 1",
+  "planNumber": "222210003331",
+  "planPerformance": {
+    "lastTwelveMonths": "0.15",
+    "total": "0.2",
+    "yearToDate": "0.16"
+  },
+  "quantity": "28",
+  "startDate": "15/11/2016",
+  "totalContribution": {
+    "amount": "1000.0",
+    "currency": "EUR"
+  },
+  "transactions": [],
+  "unitPrice": "11.890909090",
+  "valueDate": "14/12/2016",
+  "webAlias": "Eurobits PensionPlan 1",
+  "yearToDateContribution": {
+    "amount": "500.0",
+    "currency": "EUR"
+  },
+  "yield": {
+    "amount": "100.0",
+    "currency": "EUR"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "IBAN":"ES27 2032 5632 01 5632760453",
+  "bank":"2032",
+  "branch":"5632",
+  "account":"5632760453",
+  "controlDigits":"01",
+  "debits":[
+    {
+      "payeename":"Orange Espagne S.A.",
+      "payeeid":"ES91011A82009812",
+      "directdebitholder":"Ana del Tomo Lomo",
+      "status":"Aplicado",
+      "startdate":"30/09/2018",
+      "lastpaymentdate":"31/08/2018",
+      "lastpaymentamount":{
+        "amount":"7.67",
+        "currency":"EUR"
+      },
+      "mandatereference":"OSP20160OC00003765442",
+      "payeereference":"Orange móvil 1234",
+      "contractnumber":"156986354357"
+    }
+  ]
+}
