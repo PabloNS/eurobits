@@ -17,8 +17,8 @@ public class AccountTransaction {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Float quantity;
-    private Float relativeBalance;
+    private Double quantity;
+    private Double relativeBalance;
     private Long operationDate;
     private Long valueDate;
     private String description;

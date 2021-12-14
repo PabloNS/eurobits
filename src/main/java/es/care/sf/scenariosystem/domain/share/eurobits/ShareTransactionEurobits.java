@@ -15,7 +15,7 @@ public class ShareTransactionEurobits {
     private String market;
     private String name;
     private String operationDate;
-    private String quantity;
+    private Double quantity;
     private MoneyEurobits unitPrice;
     private MoneyEurobits amount;
 }

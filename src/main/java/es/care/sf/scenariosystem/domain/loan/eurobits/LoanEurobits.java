@@ -18,7 +18,7 @@ public class LoanEurobits {
     private String webAlias;
     private String accountType;
     private Period period;
-    //initBalance in API doc
+    //TODO initBalance in API doc
     private MoneyEurobits initialBalance;
     private MoneyEurobits debt;
     private MoneyEurobits repayment;

@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 public class ShareStocksEurobits {
 
     private String name;
-    private String quantity;
+    private Double quantity;
     private MoneyEurobits unitPrice;
     private String valuationDate;
     private String market;

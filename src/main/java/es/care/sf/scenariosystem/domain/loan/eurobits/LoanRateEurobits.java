@@ -9,9 +9,9 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class LoanRateEurobits {
 
-    private String interest;
+    private Double interest;
     private String referenceIndex;
-    private String margin;
-    private String totalCancellation;
-    private String partialCancellation;
+    private Double margin;
+    private Double totalCancellation;
+    private Double partialCancellation;
 }

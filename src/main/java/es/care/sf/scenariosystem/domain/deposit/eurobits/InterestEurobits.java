@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class InterestEurobits {
 
-    private String rate;
+    private Double rate;
     private String type;
 }

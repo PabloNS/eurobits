@@ -9,6 +9,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class MoneyEurobits {
 
-    private String amount;
+    private Double amount;
     private String currency;
 }

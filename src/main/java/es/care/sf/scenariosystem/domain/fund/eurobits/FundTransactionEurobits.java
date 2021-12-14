@@ -14,8 +14,8 @@ public class FundTransactionEurobits {
     private String operationDescription;
     private String operationDate;
     private String fundName;
-    private String quantity;
-    //MoneyEurobits type in API doc
-    private String unitPrice;
+    private Double quantity;
+    //TODO MoneyEurobits type in API doc
+    private Double unitPrice;
     private MoneyEurobits operationAmount;
 }

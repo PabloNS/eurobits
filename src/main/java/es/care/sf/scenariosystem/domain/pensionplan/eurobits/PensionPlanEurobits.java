@@ -24,9 +24,9 @@ public class PensionPlanEurobits {
     private MoneyEurobits yearToDatePerformance;
     private PlanPerformanceEurobits planPerformance;
     private String lastTwelveMonthsPerformance;
-    //String in API doc
+    //TODO String in API doc
     private MoneyEurobits yield;
-    private String quantity;
-    private String unitPrice;
+    private Double quantity;
+    private Double unitPrice;
     private List<PensionPlanTransactionEurobits> transactions;
 }

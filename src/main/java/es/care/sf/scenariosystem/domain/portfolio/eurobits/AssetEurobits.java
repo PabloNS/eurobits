@@ -12,11 +12,11 @@ public class AssetEurobits {
 
     private String description;
     private String assetNumber;
-    private String quantity;
-    private String unitPrice;
+    private Double quantity;
+    private Double unitPrice;
     private MoneyEurobits value;
     private MoneyEurobits sourceValue;
-    private String initialAmount;
+    private Double initialAmount;
     private String performance;
     private String performanceDescription;
     private MoneyEurobits yield;

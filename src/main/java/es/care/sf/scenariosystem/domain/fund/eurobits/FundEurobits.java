@@ -21,9 +21,9 @@ public class FundEurobits {
     private String webAlias;
     private String fundName;
     private String valueDate;
-    private String performance;
+    private Double performance;
     private String performanceDescription;
     private MoneyEurobits yield;
-    private String quantity;
+    private Double quantity;
     private List<FundTransactionEurobits> transactions;
 }

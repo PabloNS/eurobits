@@ -24,7 +24,7 @@ public class Account {
     @OneToOne
     private AccountId accountId;
 
-    private Float balance;
+    private Double balance;
     private String alias;
     private String currency;
 
