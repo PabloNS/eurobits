@@ -6,14 +6,13 @@ import es.care.sf.scenariosystem.domain.scenario.eurobits.ScenarioEurobits;
 import es.care.sf.scenariosystem.domain.scenario.transformed.Scenario;
 import es.care.sf.scenariosystem.domain.account.transformed.Account;
 import es.care.sf.scenariosystem.domain.account.eurobits.AccountEurobits;
-import es.care.sf.scenariosystem.domain.account.eurobits.AggregationInfoEurobits;
+import es.care.sf.scenariosystem.domain.aggregationInfo.eurobits.AggregationInfoEurobits;
 import es.care.sf.scenariosystem.repository.ScenarioEurobitsRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.NoSuchElementException;
 
 @Service
 @Slf4j
@@ -76,13 +75,12 @@ public class ScenarioService {
         InputStream resourceAsStream = getResourceAsStream(resourcePath.toString());
         try {
             ScenarioEurobits scenario = mapper.readValue(resourceAsStream,typeReference);
-            scenario.setHumanFriendlyName(resourcePath.toString());
-            Long existingSavedScenario = scenarioEurobitsRepository
+            /*Long existingSavedScenario = scenarioEurobitsRepository
                     .countByHumanFriendlyName(resourcePath.toString());
             if(existingSavedScenario>0){
                 log.error("Scenario {} already exists", resourcePath);
             }
-            scenarioEurobitsRepository.save(scenario);
+            scenarioEurobitsRepository.save(scenario);*/
             return scenario;
         } catch (IOException e){
             log.error(e.getLocalizedMessage());
@@ -91,6 +89,12 @@ public class ScenarioService {
     }
 
     public void createScenario(ScenarioEurobits scenarioEurobits){
+        Long existingSavedScenario = scenarioEurobitsRepository
+                .countByHumanFriendlyName(scenarioEurobits.getHumanFriendlyName());
+        if(existingSavedScenario>0){
+            log.error("Scenario {} already exists", scenarioEurobits.getHumanFriendlyName());
+            scenarioEurobits.setHumanFriendlyName(scenarioEurobits.getHumanFriendlyName() + "_NEW");
+        }
         scenarioEurobitsRepository.save(scenarioEurobits);
     }
 

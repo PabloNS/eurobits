@@ -67,7 +67,7 @@ public class ScenarioController {
     }
 
 
-    @PostMapping
+    @PostMapping("eurobits")
     public ResponseEntity createScenario(@RequestBody ScenarioEurobits scenarioEurobits){
         scenarioService.createScenario(scenarioEurobits);
         return new ResponseEntity(HttpStatus.OK);
