@@ -1,5 +1,6 @@
 package es.care.sf.scenariosystem.domain.scenario.eurobits;
 
+import es.care.sf.scenariosystem.converter.JpaConverterJson;
 import es.care.sf.scenariosystem.domain.account.eurobits.AccountEurobits;
 import es.care.sf.scenariosystem.domain.account.eurobits.AggregationInfoEurobits;
 import es.care.sf.scenariosystem.domain.accountholder.eurobits.AccountHolderEurobits;
@@ -19,27 +20,50 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Entity
 public class ScenarioEurobits {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    private String humanFriendlyName;
+
+    @Convert(converter = JpaConverterJson.class)
     private AggregationInfoEurobits aggregationInfo;
+    @Convert(converter = JpaConverterJson.class)
     private List<AccountEurobits> accounts = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<DepositEurobits> deposits = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<ShareEurobits> shares = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<FundEurobits> funds = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<LoanEurobits> loans = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<CreditCardEurobits> creditCards = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<DebitCardEurobits> debitCards = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<CreditEurobits> credits = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<AccountHolderEurobits> accountHolders = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<PensionPlanEurobits> pensionPlans = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<PortfolioEurobits> portfolios = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<PersonalInfoEurobits> personalInfo = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<FundExtendedInfoEurobits> fundsExtendedInfo = new ArrayList<>();
+    @Convert(converter = JpaConverterJson.class)
     private List<DirectDebitEurobits> directDebits = new ArrayList<>();
 }

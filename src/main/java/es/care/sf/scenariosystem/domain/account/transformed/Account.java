@@ -11,23 +11,12 @@ import java.util.List;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Entity
-@Table(name = "Accounts")
 public class Account {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
     private String ccc;
-
-    @OneToOne
     private AccountId accountId;
-
     private Double balance;
     private String alias;
     private String currency;
-
-    @OneToMany
     private List<AccountTransaction> accountTransactions = new ArrayList<>();
 }

@@ -12,6 +12,7 @@ import java.util.List;
 @NoArgsConstructor
 public class AggregationInfoEurobits {
 
+
     private String code;
     private String message;
     private List<?> companies;

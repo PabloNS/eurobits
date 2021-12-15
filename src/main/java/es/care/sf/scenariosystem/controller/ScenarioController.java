@@ -1,6 +1,7 @@
 package es.care.sf.scenariosystem.controller;
 
 import es.care.sf.scenariosystem.commons.ExceptionResponse;
+import es.care.sf.scenariosystem.domain.scenario.eurobits.ScenarioEurobits;
 import es.care.sf.scenariosystem.service.ScenarioService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -67,8 +68,8 @@ public class ScenarioController {
 
 
     @PostMapping
-    public ResponseEntity createScenario(){
-        scenarioService.createScenario();
+    public ResponseEntity createScenario(@RequestBody ScenarioEurobits scenarioEurobits){
+        scenarioService.createScenario(scenarioEurobits);
         return new ResponseEntity(HttpStatus.OK);
     }
 }
