@@ -8,7 +8,10 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import javax.persistence.Convert;
+import javax.persistence.Entity;
+import javax.persistence.EntityListeners;
+import javax.persistence.ManyToMany;
 import java.util.List;
 
 @Data
@@ -17,9 +20,6 @@ import java.util.List;
 @Entity
 @EntityListeners(CommonEntityListener.class)
 public class AggregationInfoEurobits extends CommonEntity {
-
-    @Id
-    private String humanFriendlyName;
 
     private String code;
     private String message;

@@ -1,6 +1,5 @@
 package es.care.sf.scenariosystem.commons;
 
-import es.care.sf.scenariosystem.domain.scenario.eurobits.ScenarioEurobits;
 import es.care.sf.scenariosystem.repository.ScenarioEurobitsRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

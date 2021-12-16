@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.EntityListeners;
-import javax.persistence.Id;
 
 @Data
 @AllArgsConstructor
@@ -16,9 +15,6 @@ import javax.persistence.Id;
 @Entity
 @EntityListeners(CommonEntityListener.class)
 public class WarningEurobits extends CommonEntity {
-
-    @Id
-    private String humanFriendlyName;
 
     private String warningCause;
     private String warningDetails;

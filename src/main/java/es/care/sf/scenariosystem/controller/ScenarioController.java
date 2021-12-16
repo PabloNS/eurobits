@@ -8,8 +8,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.io.IOException;
-
 @RestController
 @RequestMapping("scenario")
 @Slf4j
@@ -71,5 +69,11 @@ public class ScenarioController {
     public ResponseEntity createScenario(@RequestBody ScenarioEurobits scenarioEurobits){
         scenarioService.createScenario(scenarioEurobits);
         return new ResponseEntity(HttpStatus.OK);
+    }
+
+    @GetMapping("eurobits/{humanFriendlyName}")
+    public ResponseEntity createScenario(@PathVariable String humanFriendlyName){
+        ScenarioEurobits scenarioEurobits = scenarioService.getScenario(humanFriendlyName);
+        return new ResponseEntity(scenarioEurobits, HttpStatus.OK);
     }
 }

@@ -4,8 +4,8 @@ import es.care.sf.scenariosystem.commons.CommonEntity;
 import es.care.sf.scenariosystem.commons.CommonEntityListener;
 import es.care.sf.scenariosystem.converter.JpaConverterJson;
 import es.care.sf.scenariosystem.domain.account.eurobits.AccountEurobits;
-import es.care.sf.scenariosystem.domain.aggregationInfo.eurobits.AggregationInfoEurobits;
 import es.care.sf.scenariosystem.domain.accountholder.eurobits.AccountHolderEurobits;
+import es.care.sf.scenariosystem.domain.aggregationInfo.eurobits.AggregationInfoEurobits;
 import es.care.sf.scenariosystem.domain.credit.eurobits.CreditEurobits;
 import es.care.sf.scenariosystem.domain.creditcard.eurobits.CreditCardEurobits;
 import es.care.sf.scenariosystem.domain.debitcard.eurobits.eurobits.DebitCardEurobits;
@@ -33,13 +33,11 @@ import java.util.List;
 @EntityListeners(CommonEntityListener.class)
 public class ScenarioEurobits extends CommonEntity {
 
-    @Id
-    private String humanFriendlyName;
-
     @ManyToOne(cascade = CascadeType.ALL)
     private AggregationInfoEurobits aggregationInfo;
 
     @ManyToMany(cascade = CascadeType.ALL)
+    @JoinTable(name = "SCENARIO_EUROBITS_ACCOUNTS")
     private List<AccountEurobits> accounts = new ArrayList<>();
 
     @Convert(converter = JpaConverterJson.class)

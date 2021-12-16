@@ -1,0 +1,19 @@
+package es.care.sf.scenariosystem.service;
+
+import es.care.sf.scenariosystem.domain.account.eurobits.AccountEurobits;
+import es.care.sf.scenariosystem.repository.AccountEurobitsRepository;
+import org.springframework.stereotype.Service;
+
+@Service
+public class AccountEurobitsService {
+
+    private AccountEurobitsRepository accountEurobitsRepository;
+
+    public AccountEurobitsService(AccountEurobitsRepository accountEurobitsRepository){
+        this.accountEurobitsRepository = accountEurobitsRepository;
+    }
+
+    public void createAccount(AccountEurobits accountEurobits) {
+        accountEurobitsRepository.save(accountEurobits);
+    }
+}
