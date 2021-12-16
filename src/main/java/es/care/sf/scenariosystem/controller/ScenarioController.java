@@ -8,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("scenario")
 @Slf4j
@@ -72,8 +74,14 @@ public class ScenarioController {
     }
 
     @GetMapping("eurobits/{humanFriendlyName}")
-    public ResponseEntity createScenario(@PathVariable String humanFriendlyName){
+    public ResponseEntity getScenario(@PathVariable String humanFriendlyName){
         ScenarioEurobits scenarioEurobits = scenarioService.getScenario(humanFriendlyName);
+        return new ResponseEntity(scenarioEurobits, HttpStatus.OK);
+    }
+
+    @GetMapping("eurobits")
+    public ResponseEntity getAllScenarios(){
+        List<ScenarioEurobits> scenarioEurobits = scenarioService.getAllScenarios();
         return new ResponseEntity(scenarioEurobits, HttpStatus.OK);
     }
 }

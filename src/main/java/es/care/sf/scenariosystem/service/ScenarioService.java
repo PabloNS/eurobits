@@ -13,6 +13,7 @@ import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.util.List;
 
 @Service
 @Slf4j
@@ -144,5 +145,9 @@ public class ScenarioService {
             throw new Exception(exceptionMessage.toString());
         }
         return resourceAsStream;
+    }
+
+    public List<ScenarioEurobits> getAllScenarios() {
+        return scenarioEurobitsRepository.findAll();
     }
 }
