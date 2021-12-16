@@ -26,13 +26,12 @@ public class AutoScenarioService {
         this.scenarioService = scenarioService;
     }
 
-
     private String generateRandomString(){
         return UUID.randomUUID().toString();
     }
 
     private MoneyEurobits generateRandomMoney(){
-        return MoneyEurobits.builder().amount(Double.valueOf(new Random().nextInt(9 - 0 + 1) + 0))
+        return MoneyEurobits.builder().amount(Double.valueOf(new Random().nextInt(1000 - 0 + 1) + 0))
                 .currency("EUR").build();
     }
 
@@ -48,11 +47,11 @@ public class AutoScenarioService {
         AccountEurobits accountEurobits = AccountEurobits.builder()
                 .account(generateRandomString())
                 .balance(generateRandomMoney())
-                .controlDigits(generateRandomString())
+                .controlDigits("")
                 .transactions(generateRandomAccountTransactions(1))
-                .bank(generateRandomString())
-                .branch(generateRandomString())
-                .webAlias(generateRandomString())
+                .bank("")
+                .branch("")
+                .webAlias("")
                 .build();
 
         accountEurobits.setHumanFriendlyName("ACCOUNT"
@@ -75,12 +74,12 @@ public class AutoScenarioService {
         AccountTransactionEurobits accountTransactionEurobits = AccountTransactionEurobits.builder()
                 .amount(generateRandomMoney())
                 .balance(generateRandomMoney())
-                .transactionType(generateRandomString())
-                .description(generateRandomString())
+                .transactionType("")
+                .description("")
                 .operationDate(generateRandomDate())
-                .payee(generateRandomString())
-                .payer(generateRandomString())
-                .reference(generateRandomString())
+                .payee("")
+                .payer("")
+                .reference("")
                 .valueDate(generateRandomDate())
                 .build();
         accountTransactionEurobits.setHumanFriendlyName("ACCOUNT-TRANSACTION-"
@@ -91,7 +90,7 @@ public class AutoScenarioService {
     }
 
     private String generateRandomDate(){
-        SimpleDateFormat formatter= new SimpleDateFormat("dd-MM-yyyy");
+        SimpleDateFormat formatter= new SimpleDateFormat("dd/M/yyyy");
         Date date = new Date(System.currentTimeMillis());
         return formatter.format(date);
     }
@@ -102,7 +101,7 @@ public class AutoScenarioService {
         User user = new User();
 
         scenarioEurobits.setAccounts(generateRandomAccounts(autoScenarioDto.getNumberOfAccounts()));
-        scenarioEurobits.setHumanFriendlyName("SCENARIO-" + scenarioEurobits.getAccounts().size() + "-ACCOUNTS");
+        scenarioEurobits.setHumanFriendlyName("SCENARIO-AUTO-" + scenarioEurobits.getAccounts().size() + "ACCOUNTS");
         //scenarioEurobits.setAggregationInfo();
 
         ScenarioEurobits scenario = scenarioService.createScenario(scenarioEurobits);
