@@ -13,7 +13,7 @@ public class AccountTransactionEurobitsService {
         this.accountTransactionEurobitsRepository = accountTransactionEurobitsRepository;
     }
 
-    public void createAccountTransaction(AccountTransactionEurobits accountTransactionEurobits) {
-        accountTransactionEurobitsRepository.save(accountTransactionEurobits);
+    public AccountTransactionEurobits createAccountTransaction(AccountTransactionEurobits accountTransactionEurobits) {
+        return accountTransactionEurobitsRepository.save(accountTransactionEurobits);
     }
 }

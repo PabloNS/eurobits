@@ -21,7 +21,6 @@ public class AccountEurobitsController {
 
     @PostMapping
     public ResponseEntity createAccount(@RequestBody AccountEurobits accountEurobits){
-        accountEurobitsService.createAccount(accountEurobits);
-        return new ResponseEntity(HttpStatus.OK);
+        return new ResponseEntity( accountEurobitsService.createAccount(accountEurobits), HttpStatus.OK);
     }
 }

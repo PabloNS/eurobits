@@ -18,6 +18,7 @@ import es.care.sf.scenariosystem.domain.pensionplan.eurobits.PensionPlanEurobits
 import es.care.sf.scenariosystem.domain.personalinfo.eurobits.PersonalInfoEurobits;
 import es.care.sf.scenariosystem.domain.portfolio.eurobits.PortfolioEurobits;
 import es.care.sf.scenariosystem.domain.share.eurobits.ShareEurobits;
+import es.care.sf.scenariosystem.domain.user.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -66,4 +67,7 @@ public class ScenarioEurobits extends CommonEntity {
     private List<FundExtendedInfoEurobits> fundsExtendedInfo = new ArrayList<>();
     @Convert(converter = JpaConverterJson.class)
     private List<DirectDebitEurobits> directDebits = new ArrayList<>();
+
+    @OneToMany
+    private List<User> users;
 }
