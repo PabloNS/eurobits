@@ -39,13 +39,13 @@ public class AutoScenarioService {
     private List<AccountEurobits> generateRandomAccounts(int numberAccounts){
         List<AccountEurobits> accountEurobits = new ArrayList<>();
         for(int i=0; i<numberAccounts; i++){
-            accountEurobits.add(generateRandomAccount());
+            accountEurobits.add(generateRandomAccount(i));
         }
         return accountEurobits;
     }
 
-    private AccountEurobits generateRandomAccount(){
-        return AccountEurobits.builder()
+    private AccountEurobits generateRandomAccount(int nAccount){
+        AccountEurobits accountEurobits = AccountEurobits.builder()
                 .account(generateRandomString())
                 .balance(generateRandomMoney())
                 .controlDigits(generateRandomString())
@@ -54,6 +54,13 @@ public class AutoScenarioService {
                 .branch(generateRandomString())
                 .webAlias(generateRandomString())
                 .build();
+
+        accountEurobits.setHumanFriendlyName("ACCOUNT"
+                + (nAccount+1)
+                + "-"
+                + accountEurobits.getTransactions().size() + "TRANSACTIONS");
+
+        return accountEurobits;
     }
 
     private List<AccountTransactionEurobits> generateRandomAccountTransactions(int numberTransactions){
@@ -65,7 +72,7 @@ public class AutoScenarioService {
     }
 
     private AccountTransactionEurobits generateRandomAccountTransaction(){
-        return AccountTransactionEurobits.builder()
+        AccountTransactionEurobits accountTransactionEurobits = AccountTransactionEurobits.builder()
                 .amount(generateRandomMoney())
                 .balance(generateRandomMoney())
                 .transactionType(generateRandomString())
@@ -76,6 +83,11 @@ public class AutoScenarioService {
                 .reference(generateRandomString())
                 .valueDate(generateRandomDate())
                 .build();
+        accountTransactionEurobits.setHumanFriendlyName("ACCOUNT-TRANSACTION-"
+                + accountTransactionEurobits.getBalance().getAmount()
+                + accountTransactionEurobits.getBalance().getCurrency());
+
+        return accountTransactionEurobits;
     }
 
     private String generateRandomDate(){
