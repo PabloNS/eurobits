@@ -1,4 +1,4 @@
-package es.care.sf.scenariosystem.service;
+package es.care.sf.scenariosystem.service.scenario;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -23,23 +23,6 @@ public class ScenarioService {
 
     public ScenarioService(ScenarioEurobitsRepository scenarioEurobitsRepository){
         this.scenarioEurobitsRepository = scenarioEurobitsRepository;
-    }
-
-    public ScenarioEurobits getCustomizedScenarioEurobits(int nAccounts) throws Exception {
-        ScenarioEurobits scenario = new ScenarioEurobits();
-        scenario.setAggregationInfo(getAggregationInfoEurobits());
-        for(int i=0; i<nAccounts; i++){
-           scenario.getAccounts().add(getAccountEurobits());
-        }
-        return scenario;
-    }
-
-    public Scenario getCustomizedScenarioTransformed(int nAccounts) throws Exception {
-        Scenario scenario = new Scenario();
-        for(int i=0; i<nAccounts; i++){
-            scenario.getResponse().getBankExtract().getAccounts().add(getAccountTransformed());
-        }
-        return scenario;
     }
 
     public Scenario getDemoBankScenario() throws Exception {
@@ -89,8 +72,8 @@ public class ScenarioService {
         }
     }
 
-    public void createScenario(ScenarioEurobits scenarioEurobits){
-        scenarioEurobitsRepository.save(scenarioEurobits);
+    public ScenarioEurobits createScenario(ScenarioEurobits scenarioEurobits){
+        return scenarioEurobitsRepository.save(scenarioEurobits);
     }
 
     public ScenarioEurobits getScenario(String humanFriendlyName) {

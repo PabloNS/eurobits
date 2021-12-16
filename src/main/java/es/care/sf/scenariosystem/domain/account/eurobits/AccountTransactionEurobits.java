@@ -5,6 +5,7 @@ import es.care.sf.scenariosystem.commons.CommonEntityListener;
 import es.care.sf.scenariosystem.converter.MoneyEurobitsConverter;
 import es.care.sf.scenariosystem.domain.MoneyEurobits;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -19,6 +20,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @EntityListeners(CommonEntityListener.class)
+@Builder
 public class AccountTransactionEurobits extends CommonEntity {
 
     private String transactionType;
@@ -33,6 +35,6 @@ public class AccountTransactionEurobits extends CommonEntity {
     @Convert(converter = MoneyEurobitsConverter.class)
     private MoneyEurobits balance;
 
-    @JoinTable(name = "ACCOUNT_EUROBITS_TRANSACTIONS")
-    private List<AccountEurobits> accounts;
+    //@JoinTable(name = "ACCOUNT_EUROBITS_TRANSACTIONS")
+    //private List<AccountEurobits> accounts;
 }

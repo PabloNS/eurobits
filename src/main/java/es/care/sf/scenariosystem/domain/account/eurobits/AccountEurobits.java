@@ -6,6 +6,7 @@ import es.care.sf.scenariosystem.converter.MoneyEurobitsConverter;
 import es.care.sf.scenariosystem.domain.MoneyEurobits;
 import es.care.sf.scenariosystem.domain.scenario.eurobits.ScenarioEurobits;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -17,6 +18,7 @@ import java.util.List;
 @NoArgsConstructor
 @Entity
 @EntityListeners(CommonEntityListener.class)
+@Builder
 public class AccountEurobits extends CommonEntity {
 
     private String bank;

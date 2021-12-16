@@ -1,7 +1,7 @@
 package es.care.sf.scenariosystem.controller.account.eurobits;
 
 import es.care.sf.scenariosystem.domain.account.eurobits.AccountEurobits;
-import es.care.sf.scenariosystem.service.AccountEurobitsService;
+import es.care.sf.scenariosystem.service.account.eurobits.AccountEurobitsService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;

@@ -1,8 +1,8 @@
-package es.care.sf.scenariosystem.controller;
+package es.care.sf.scenariosystem.controller.scenario;
 
 import es.care.sf.scenariosystem.commons.ExceptionResponse;
 import es.care.sf.scenariosystem.domain.scenario.eurobits.ScenarioEurobits;
-import es.care.sf.scenariosystem.service.ScenarioService;
+import es.care.sf.scenariosystem.service.scenario.ScenarioService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,24 +19,6 @@ public class ScenarioController {
 
     public ScenarioController(ScenarioService scenarioService){
         this.scenarioService = scenarioService;
-    }
-
-    @GetMapping("eurobits/custom")
-    public ResponseEntity getCustomizedScenarioEurobits(@RequestParam(name = "nAccounts") int nAccounts){
-        try {
-            return new ResponseEntity(scenarioService.getCustomizedScenarioEurobits(nAccounts), HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity(new ExceptionResponse(e.getLocalizedMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-
-    @GetMapping("transformed/custom")
-    public ResponseEntity getCustomizedScenario(@RequestParam(name = "nAccounts") int nAccounts){
-        try {
-            return new ResponseEntity(scenarioService.getCustomizedScenarioTransformed(nAccounts), HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity(new ExceptionResponse(e.getLocalizedMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
     @GetMapping("transformed/demoBank")
@@ -69,8 +51,7 @@ public class ScenarioController {
 
     @PostMapping("eurobits")
     public ResponseEntity createScenario(@RequestBody ScenarioEurobits scenarioEurobits){
-        scenarioService.createScenario(scenarioEurobits);
-        return new ResponseEntity(HttpStatus.OK);
+        return new ResponseEntity(scenarioService.createScenario(scenarioEurobits), HttpStatus.OK);
     }
 
     @GetMapping("eurobits/{humanFriendlyName}")

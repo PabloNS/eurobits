@@ -1,4 +1,4 @@
-package es.care.sf.scenariosystem.service;
+package es.care.sf.scenariosystem.service.account.eurobits;
 
 import es.care.sf.scenariosystem.domain.account.eurobits.AccountEurobits;
 import es.care.sf.scenariosystem.repository.AccountEurobitsRepository;
