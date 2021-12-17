@@ -31,16 +31,6 @@ public class ScenarioController {
         }
     }
 
-    @GetMapping("eurobits/error/{errorCode}")
-    public ResponseEntity getFullExampleEurobitsScenario(@PathVariable String errorCode){
-        try {
-            return new ResponseEntity(scenarioService.getErrorScenarioEurobits(errorCode), HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity(new ExceptionResponse(e.getLocalizedMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
-
-
     @PostMapping("eurobits")
     public ResponseEntity createScenario(@RequestBody ScenarioEurobits scenarioEurobits){
         return new ResponseEntity(scenarioService.createScenario(scenarioEurobits), HttpStatus.OK);

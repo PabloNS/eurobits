@@ -101,7 +101,10 @@ public class AutoScenarioService {
         User user = new User();
 
         scenarioEurobits.setAccounts(generateRandomAccounts(autoScenarioDto.getNumberOfAccounts()));
-        scenarioEurobits.setHumanFriendlyName("SCENARIO-AUTO-" + scenarioEurobits.getAccounts().size() + "ACCOUNTS");
+        if(autoScenarioDto.getHumanFriendlyName()==null){
+            scenarioEurobits.setHumanFriendlyName("SCENARIO-AUTO-" + scenarioEurobits.getAccounts().size() + "ACCOUNTS");
+        }
+
         //scenarioEurobits.setAggregationInfo();
 
         ScenarioEurobits scenario = scenarioService.createScenario(scenarioEurobits);

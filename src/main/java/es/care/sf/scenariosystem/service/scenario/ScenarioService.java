@@ -45,21 +45,6 @@ public class ScenarioService {
         }
     }
 
-    public ScenarioEurobits getErrorScenarioEurobits(String errorCode) throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        TypeReference<ScenarioEurobits> typeReference = new TypeReference<>(){};
-        StringBuilder resourcePath = new StringBuilder("/eurobits/errors/").append(errorCode).append(".json");
-        InputStream resourceAsStream = getResourceAsStream(resourcePath.toString());
-        try {
-            ScenarioEurobits scenario = mapper.readValue(resourceAsStream,typeReference);
-            scenarioEurobitsRepository.save(scenario);
-            return scenario;
-        } catch (IOException e){
-            log.error(e.getLocalizedMessage());
-            throw e;
-        }
-    }
-
     public ScenarioEurobits createScenario(ScenarioEurobits scenarioEurobits){
         return scenarioEurobitsRepository.save(scenarioEurobits);
     }

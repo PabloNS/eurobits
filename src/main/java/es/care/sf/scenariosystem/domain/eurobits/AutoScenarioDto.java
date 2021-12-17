@@ -5,5 +5,6 @@ import lombok.Data;
 @Data
 public class AutoScenarioDto {
 
+    private String humanFriendlyName;
     private int numberOfAccounts;
 }

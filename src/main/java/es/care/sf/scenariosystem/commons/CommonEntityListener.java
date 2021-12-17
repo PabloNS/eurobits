@@ -25,12 +25,13 @@ public class CommonEntityListener {
         if(commonEntity.getHumanFriendlyName()==null){
             commonEntity.setHumanFriendlyName(commonEntity.getClass().getSimpleName() + "-" + UUID.randomUUID());
         } else{
+            /*
             Long existingSavedScenario = scenarioEurobitsRepository
                     .countByHumanFriendlyName(commonEntity.getHumanFriendlyName());
             if(existingSavedScenario>0){
                 log.error("Scenario {} already exists", commonEntity.getHumanFriendlyName());
                 //scenarioEurobits.setHumanFriendlyName(scenarioEurobits.getHumanFriendlyName() + "_NEW");
-            }
+            }*/
         }
     }
 }
