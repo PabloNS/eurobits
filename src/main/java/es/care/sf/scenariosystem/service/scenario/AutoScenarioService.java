@@ -103,6 +103,8 @@ public class AutoScenarioService {
         scenarioEurobits.setAccounts(generateRandomAccounts(autoScenarioDto.getNumberOfAccounts()));
         if(autoScenarioDto.getHumanFriendlyName()==null){
             scenarioEurobits.setHumanFriendlyName("SCENARIO-AUTO-" + scenarioEurobits.getAccounts().size() + "ACCOUNTS");
+        } else {
+            scenarioEurobits.setHumanFriendlyName(autoScenarioDto.getHumanFriendlyName());
         }
 
         //scenarioEurobits.setAggregationInfo();

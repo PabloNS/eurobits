@@ -60,9 +60,9 @@ public class ScenarioController {
 
     //This endpoint is the reponse of the Aggregation where executionId
     //is the Scenario identifier for us
-    @PostMapping("eurobits/api/aggregation/{executionId}")
+    @GetMapping("eurobits/api/aggregation/{scenarioHumanFriendlyName}")
     public ResponseEntity getAggregationScenario(@PathVariable String scenarioHumanFriendlyName){
         ScenarioEurobits scenarioEurobits = scenarioService.getScenario(scenarioHumanFriendlyName);
-        return new ResponseEntity(HttpStatus.OK);
+        return new ResponseEntity(scenarioEurobits, HttpStatus.OK);
     }
 }
