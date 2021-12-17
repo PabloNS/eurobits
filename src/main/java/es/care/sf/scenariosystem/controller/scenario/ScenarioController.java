@@ -1,7 +1,8 @@
 package es.care.sf.scenariosystem.controller.scenario;
 
 import es.care.sf.scenariosystem.commons.ExceptionResponse;
-import es.care.sf.scenariosystem.domain.scenario.eurobits.ScenarioEurobits;
+import es.care.sf.scenariosystem.domain.eurobits.AggregationRequest;
+import es.care.sf.scenariosystem.domain.eurobits.ScenarioEurobits;
 import es.care.sf.scenariosystem.service.scenario.ScenarioService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -19,15 +20,6 @@ public class ScenarioController {
 
     public ScenarioController(ScenarioService scenarioService){
         this.scenarioService = scenarioService;
-    }
-
-    @GetMapping("transformed/demoBank")
-    public ResponseEntity getDemoBankScenario(){
-        try {
-            return new ResponseEntity(scenarioService.getDemoBankScenario(), HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity(new ExceptionResponse(e.getLocalizedMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
     }
 
     @GetMapping("eurobits/example/{number}")
@@ -64,5 +56,23 @@ public class ScenarioController {
     public ResponseEntity getAllScenarios(){
         List<ScenarioEurobits> scenarioEurobits = scenarioService.getAllScenarios();
         return new ResponseEntity(scenarioEurobits, HttpStatus.OK);
+    }
+
+    //This endpoint is the equivalent first Eurobits request where we get the execId
+    @PostMapping("eurobits/api/aggregation")
+    public ResponseEntity startAggregationScenario(@RequestBody AggregationRequest aggregationRequest){
+        try{
+            return new ResponseEntity(scenarioService.newAggregation(aggregationRequest), HttpStatus.OK);
+        } catch (Exception e){
+            return new ResponseEntity(new ExceptionResponse(e.getLocalizedMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
+        }
+    }
+
+    //This endpoint is the reponse of the Aggregation where executionId
+    //is the Scenario identifier for us
+    @PostMapping("eurobits/api/aggregation/{executionId}")
+    public ResponseEntity getAggregationScenario(@PathVariable String scenarioHumanFriendlyName){
+        ScenarioEurobits scenarioEurobits = scenarioService.getScenario(scenarioHumanFriendlyName);
+        return new ResponseEntity(HttpStatus.OK);
     }
 }

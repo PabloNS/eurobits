@@ -1,5 +1,6 @@
 package es.care.sf.scenariosystem.controller.scenario;
 
+import es.care.sf.scenariosystem.domain.eurobits.AutoScenarioDto;
 import es.care.sf.scenariosystem.service.scenario.AutoScenarioService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

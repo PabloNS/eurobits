@@ -1,6 +1,7 @@
 package es.care.sf.scenariosystem.controller.user;
 
 import es.care.sf.scenariosystem.domain.user.User;
+import es.care.sf.scenariosystem.exception.CustomException;
 import es.care.sf.scenariosystem.service.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +23,7 @@ public class UserController {
     }
 
     @GetMapping("{id}")
-    public ResponseEntity getUser(@PathVariable("id") Long id){
+    public ResponseEntity getUser(@PathVariable("id") Long id) throws CustomException {
         return new ResponseEntity(userService.getUser(id), HttpStatus.OK);
     }
 

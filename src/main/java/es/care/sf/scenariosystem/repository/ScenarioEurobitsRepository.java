@@ -1,6 +1,6 @@
 package es.care.sf.scenariosystem.repository;
 
-import es.care.sf.scenariosystem.domain.scenario.eurobits.ScenarioEurobits;
+import es.care.sf.scenariosystem.domain.eurobits.ScenarioEurobits;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

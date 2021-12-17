@@ -2,18 +2,20 @@ package es.care.sf.scenariosystem.service.scenario;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import es.care.sf.scenariosystem.domain.account.eurobits.AccountEurobits;
-import es.care.sf.scenariosystem.domain.account.transformed.Account;
-import es.care.sf.scenariosystem.domain.aggregationInfo.eurobits.AggregationInfoEurobits;
-import es.care.sf.scenariosystem.domain.scenario.eurobits.ScenarioEurobits;
-import es.care.sf.scenariosystem.domain.scenario.transformed.Scenario;
+import es.care.sf.scenariosystem.domain.eurobits.AggregationRequest;
+import es.care.sf.scenariosystem.domain.eurobits.AggregationStatusResponse;
+import es.care.sf.scenariosystem.domain.eurobits.ScenarioEurobits;
+import es.care.sf.scenariosystem.domain.user.User;
+import es.care.sf.scenariosystem.exception.CustomException;
 import es.care.sf.scenariosystem.repository.ScenarioEurobitsRepository;
+import es.care.sf.scenariosystem.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 @Slf4j
@@ -21,21 +23,12 @@ public class ScenarioService {
 
     private ScenarioEurobitsRepository scenarioEurobitsRepository;
 
-    public ScenarioService(ScenarioEurobitsRepository scenarioEurobitsRepository){
-        this.scenarioEurobitsRepository = scenarioEurobitsRepository;
-    }
+    private UserService userService;
 
-    public Scenario getDemoBankScenario() throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        TypeReference<Scenario> typeReference = new TypeReference<>(){};
-        InputStream resourceAsStream = getResourceAsStream("/transformed/demoBank.json");
-        try {
-            Scenario scenario = mapper.readValue(resourceAsStream,typeReference);
-            return scenario;
-        } catch (IOException e){
-            log.error(e.getLocalizedMessage());
-            throw e;
-        }
+    public ScenarioService(ScenarioEurobitsRepository scenarioEurobitsRepository,
+                           UserService userService){
+        this.scenarioEurobitsRepository = scenarioEurobitsRepository;
+        this.userService = userService;
     }
 
     public ScenarioEurobits getExampleScenarioEurobits(int number) throws Exception {
@@ -59,12 +52,7 @@ public class ScenarioService {
         InputStream resourceAsStream = getResourceAsStream(resourcePath.toString());
         try {
             ScenarioEurobits scenario = mapper.readValue(resourceAsStream,typeReference);
-            /*Long existingSavedScenario = scenarioEurobitsRepository
-                    .countByHumanFriendlyName(resourcePath.toString());
-            if(existingSavedScenario>0){
-                log.error("Scenario {} already exists", resourcePath);
-            }
-            scenarioEurobitsRepository.save(scenario);*/
+            scenarioEurobitsRepository.save(scenario);
             return scenario;
         } catch (IOException e){
             log.error(e.getLocalizedMessage());
@@ -80,43 +68,8 @@ public class ScenarioService {
         return scenarioEurobitsRepository.findByHumanFriendlyName(humanFriendlyName);
     }
 
-    private Account getAccountTransformed() throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        TypeReference<Account> typeReference = new TypeReference<>(){};
-        InputStream resourceAsStream = getResourceAsStream("/transformed/account.json");
-        try {
-            Account account = mapper.readValue(resourceAsStream,typeReference);
-            return account;
-        } catch (IOException e){
-            log.error(e.getLocalizedMessage());
-            throw e;
-        }
-    }
-
-    private AccountEurobits getAccountEurobits() throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        TypeReference<AccountEurobits> typeReference = new TypeReference<>(){};
-        InputStream resourceAsStream = getResourceAsStream("/eurobits/accountEurobits.json");
-        try {
-            AccountEurobits account = mapper.readValue(resourceAsStream,typeReference);
-            return account;
-        } catch (IOException e){
-            log.error(e.getLocalizedMessage());
-            throw e;
-        }
-    }
-
-    private AggregationInfoEurobits getAggregationInfoEurobits() throws Exception {
-        ObjectMapper mapper = new ObjectMapper();
-        TypeReference<AggregationInfoEurobits> typeReference = new TypeReference<>(){};
-        InputStream resourceAsStream = getResourceAsStream("/eurobits/aggregationInfoEurobits.json");
-        try {
-            AggregationInfoEurobits aggregationInfoEurobits = mapper.readValue(resourceAsStream,typeReference);
-            return aggregationInfoEurobits;
-        } catch (IOException e){
-            log.error(e.getLocalizedMessage());
-            throw e;
-        }
+    public List<ScenarioEurobits> getAllScenarios() {
+        return scenarioEurobitsRepository.findAll();
     }
 
     private InputStream getResourceAsStream(String resourcePath) throws Exception {
@@ -130,7 +83,9 @@ public class ScenarioService {
         return resourceAsStream;
     }
 
-    public List<ScenarioEurobits> getAllScenarios() {
-        return scenarioEurobitsRepository.findAll();
+    public AggregationStatusResponse newAggregation(AggregationRequest aggregationRequest) throws CustomException {
+        User user = userService.getUser(Long.valueOf(aggregationRequest.getUserId()));
+        return AggregationStatusResponse.builder()
+                .executionId(user.getScenarioEurobitsId()).build();
     }
 }
