@@ -8,6 +8,7 @@ import es.care.sf.scenariosystem.domain.eurobits.privateaggregation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.http.HttpStatus;
 
 import javax.persistence.*;
 import java.util.List;
@@ -19,6 +20,9 @@ import java.util.List;
 @Entity
 @EntityListeners(CommonEntityListener.class)
 public class ScenarioEurobits extends CommonEntity {
+
+
+    private boolean twoFactorAuthentication;
 
     @ManyToOne(cascade = CascadeType.ALL)
     private AggregationInfo aggregationInfo;

@@ -37,4 +37,18 @@ public class UserService {
     public User createUser(User user) {
         return userRepository.save(user);
     }
+
+    public User updateUser(Long id, User user) {
+        return userRepository.findById(id)
+                .map(userDb -> {
+                    userDb.setScenarioEurobitsId(user.getScenarioEurobitsId());
+                    return userRepository.save(userDb);
+                })
+                .orElseGet(() -> {
+                    log.error("User with id {} not found", id);
+                    StringBuilder exceptionMessage = new StringBuilder("User with id ").append(id)
+                            .append(" not found");
+                    throw new CustomException(exceptionMessage.toString());
+                });
+    }
 }

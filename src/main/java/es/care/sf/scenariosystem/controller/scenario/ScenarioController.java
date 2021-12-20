@@ -2,7 +2,10 @@ package es.care.sf.scenariosystem.controller.scenario;
 
 import es.care.sf.scenariosystem.commons.ExceptionResponse;
 import es.care.sf.scenariosystem.domain.eurobits.AggregationRequest;
+import es.care.sf.scenariosystem.domain.eurobits.Unblock2FADto;
+import es.care.sf.scenariosystem.domain.execution.Execution;
 import es.care.sf.scenariosystem.domain.eurobits.ScenarioEurobits;
+import es.care.sf.scenariosystem.service.execution.ExecutionService;
 import es.care.sf.scenariosystem.service.scenario.ScenarioService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -18,8 +21,11 @@ public class ScenarioController {
 
     private ScenarioService scenarioService;
 
-    public ScenarioController(ScenarioService scenarioService){
+    private ExecutionService executionService;
+
+    public ScenarioController(ScenarioService scenarioService, ExecutionService executionService){
         this.scenarioService = scenarioService;
+        this.executionService = executionService;
     }
 
     @GetMapping("eurobits/example/{number}")
@@ -58,11 +64,16 @@ public class ScenarioController {
         }
     }
 
-    //This endpoint is the reponse of the Aggregation where executionId
-    //is the Scenario identifier for us
-    @GetMapping("eurobits/api/aggregation/{scenarioHumanFriendlyName}")
-    public ResponseEntity getAggregationScenario(@PathVariable String scenarioHumanFriendlyName){
-        ScenarioEurobits scenarioEurobits = scenarioService.getScenario(scenarioHumanFriendlyName);
-        return new ResponseEntity(scenarioEurobits, HttpStatus.OK);
+    @GetMapping("eurobits/api/aggregation/{executionId}")
+    public ResponseEntity getAggregationScenario(@PathVariable Long executionId){
+        Execution execution = executionService.getExecution(executionId);
+        return new ResponseEntity(execution.getScenarioEurobits(), execution.getHttpStatus());
+    }
+
+    @PutMapping("eurobits/api/aggregation/{executionId}")
+    public ResponseEntity unblock2FA(@PathVariable Long executionId,
+                                     @RequestBody Unblock2FADto unblock2FADto){
+        executionService.unblockTwoFactorAuthentication(executionId);
+        return new ResponseEntity(HttpStatus.ACCEPTED);
     }
 }

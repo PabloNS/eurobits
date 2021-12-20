@@ -4,9 +4,11 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import es.care.sf.scenariosystem.domain.eurobits.AggregationRequest;
 import es.care.sf.scenariosystem.domain.eurobits.AggregationStatusResponse;
+import es.care.sf.scenariosystem.domain.execution.Execution;
 import es.care.sf.scenariosystem.domain.eurobits.ScenarioEurobits;
 import es.care.sf.scenariosystem.domain.user.User;
 import es.care.sf.scenariosystem.exception.CustomException;
+import es.care.sf.scenariosystem.repository.ExecutionRepository;
 import es.care.sf.scenariosystem.repository.ScenarioEurobitsRepository;
 import es.care.sf.scenariosystem.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +17,6 @@ import org.springframework.stereotype.Service;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.List;
-import java.util.Optional;
 
 @Service
 @Slf4j
@@ -25,10 +26,13 @@ public class ScenarioService {
 
     private UserService userService;
 
-    public ScenarioService(ScenarioEurobitsRepository scenarioEurobitsRepository,
-                           UserService userService){
+    private ExecutionRepository executionRepository;
+
+    public ScenarioService(ScenarioEurobitsRepository scenarioEurobitsRepository, UserService userService,
+                           ExecutionRepository executionRepository){
         this.scenarioEurobitsRepository = scenarioEurobitsRepository;
         this.userService = userService;
+        this.executionRepository = executionRepository;
     }
 
     public ScenarioEurobits getExampleScenarioEurobits(int number) throws Exception {
@@ -50,7 +54,15 @@ public class ScenarioService {
     }
 
     public ScenarioEurobits getScenario(String humanFriendlyName) {
-        return scenarioEurobitsRepository.findByHumanFriendlyName(humanFriendlyName);
+        ScenarioEurobits scenarioEurobits = scenarioEurobitsRepository
+                .findByHumanFriendlyName(humanFriendlyName);
+        if(scenarioEurobits==null){
+            log.error("ScenarioEurobits with id {} not found", humanFriendlyName);
+            StringBuilder exceptionMessage = new StringBuilder("ScenarioEurobits with id ").append(humanFriendlyName)
+                    .append(" not found");
+            throw new CustomException(exceptionMessage.toString());
+        }
+        return scenarioEurobits;
     }
 
     public List<ScenarioEurobits> getAllScenarios() {
@@ -70,7 +82,12 @@ public class ScenarioService {
 
     public AggregationStatusResponse newAggregation(AggregationRequest aggregationRequest) throws CustomException {
         User user = userService.getUser(Long.valueOf(aggregationRequest.getUserId()));
+        ScenarioEurobits scenarioEurobits = getScenario(user.getScenarioEurobitsId());
+        Execution execution = Execution.builder().scenarioEurobits(scenarioEurobits)
+                .blokedByTwoFactorAuthentication(scenarioEurobits.isTwoFactorAuthentication())
+                .build();
+        executionRepository.save(execution);
         return AggregationStatusResponse.builder()
-                .executionId(user.getScenarioEurobitsId()).build();
+                .executionId(String.valueOf(execution.getId())).build();
     }
 }
