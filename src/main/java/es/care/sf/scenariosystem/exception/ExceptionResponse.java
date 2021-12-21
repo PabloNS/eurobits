@@ -1,4 +1,4 @@
-package es.care.sf.scenariosystem.commons;
+package es.care.sf.scenariosystem.exception;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

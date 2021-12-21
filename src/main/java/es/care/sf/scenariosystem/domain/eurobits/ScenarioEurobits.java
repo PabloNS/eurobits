@@ -1,14 +1,13 @@
 package es.care.sf.scenariosystem.domain.eurobits;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import es.care.sf.scenariosystem.commons.CommonEntity;
-import es.care.sf.scenariosystem.commons.CommonEntityListener;
+import es.care.sf.scenariosystem.domain.common.CommonEntity;
+import es.care.sf.scenariosystem.domain.common.CommonEntityListener;
 import es.care.sf.scenariosystem.domain.eurobits.loyalty.LoyaltyProgram;
 import es.care.sf.scenariosystem.domain.eurobits.privateaggregation.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.http.HttpStatus;
 
 import javax.persistence.*;
 import java.util.List;

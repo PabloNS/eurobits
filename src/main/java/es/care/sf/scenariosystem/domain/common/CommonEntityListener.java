@@ -1,4 +1,4 @@
-package es.care.sf.scenariosystem.commons;
+package es.care.sf.scenariosystem.domain.common;
 
 import es.care.sf.scenariosystem.repository.ScenarioEurobitsRepository;
 import lombok.extern.slf4j.Slf4j;
@@ -24,7 +24,7 @@ public class CommonEntityListener {
     public void prePersist(CommonEntity commonEntity) {
         if(commonEntity.getHumanFriendlyName()==null){
             commonEntity.setHumanFriendlyName(commonEntity.getClass().getSimpleName() + "-" + UUID.randomUUID());
-        } else{
+        } else {
             /*
             Long existingSavedScenario = scenarioEurobitsRepository
                     .countByHumanFriendlyName(commonEntity.getHumanFriendlyName());

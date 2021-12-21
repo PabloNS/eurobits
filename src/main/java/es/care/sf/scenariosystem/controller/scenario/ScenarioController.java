@@ -1,6 +1,8 @@
 package es.care.sf.scenariosystem.controller.scenario;
 
-import es.care.sf.scenariosystem.commons.ExceptionResponse;
+import es.care.sf.scenariosystem.domain.eurobits.LoginDto;
+import es.care.sf.scenariosystem.domain.eurobits.robotinfo.LoginResponse;
+import es.care.sf.scenariosystem.exception.ExceptionResponse;
 import es.care.sf.scenariosystem.domain.eurobits.AggregationRequest;
 import es.care.sf.scenariosystem.domain.eurobits.Unblock2FADto;
 import es.care.sf.scenariosystem.domain.execution.Execution;
@@ -74,6 +76,17 @@ public class ScenarioController {
     public ResponseEntity unblock2FA(@PathVariable Long executionId,
                                      @RequestBody Unblock2FADto unblock2FADto){
         executionService.unblockTwoFactorAuthentication(executionId);
+        return new ResponseEntity(HttpStatus.ACCEPTED);
+    }
+
+    @PostMapping("eurobits/api/login")
+    public ResponseEntity login(@RequestBody LoginDto loginDto){
+        return new ResponseEntity(LoginResponse.builder().build(), HttpStatus.OK);
+    }
+
+    @DeleteMapping("eurobits/api/aggregation/{executionId}")
+    public ResponseEntity unblock2FA(@PathVariable Long executionId){
+        executionService.deleteExecution(executionId);
         return new ResponseEntity(HttpStatus.ACCEPTED);
     }
 }

@@ -1,6 +1,5 @@
-package es.care.sf.scenariosystem.commons;
+package es.care.sf.scenariosystem.domain.user;
 
-import es.care.sf.scenariosystem.domain.user.User;
 import es.care.sf.scenariosystem.exception.CustomException;
 import es.care.sf.scenariosystem.repository.ScenarioEurobitsRepository;
 import lombok.extern.slf4j.Slf4j;

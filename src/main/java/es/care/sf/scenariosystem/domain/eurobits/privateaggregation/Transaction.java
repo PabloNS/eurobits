@@ -1,8 +1,8 @@
 package es.care.sf.scenariosystem.domain.eurobits.privateaggregation;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import es.care.sf.scenariosystem.commons.CommonEntity;
-import es.care.sf.scenariosystem.commons.CommonEntityListener;
+import es.care.sf.scenariosystem.domain.common.CommonEntity;
+import es.care.sf.scenariosystem.domain.common.CommonEntityListener;
 import es.care.sf.scenariosystem.converter.MoneyConverter;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

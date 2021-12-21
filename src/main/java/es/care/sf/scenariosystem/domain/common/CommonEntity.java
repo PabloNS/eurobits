@@ -1,4 +1,4 @@
-package es.care.sf.scenariosystem.commons;
+package es.care.sf.scenariosystem.domain.common;
 
 import lombok.Data;
 

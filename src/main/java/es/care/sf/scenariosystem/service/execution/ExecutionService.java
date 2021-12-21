@@ -34,4 +34,9 @@ public class ExecutionService {
         execution.setBlokedByTwoFactorAuthentication(false);
         executionRepository.save(execution);
     }
+
+    public void deleteExecution(Long executionId) {
+        Execution execution = getExecution(executionId);
+        executionRepository.delete(execution);
+    }
 }
