@@ -22,6 +22,10 @@ public class UserEntityListener {
 
     @PrePersist
     public void prePersist(User user) throws Exception {
+        if(user.getUserId()==null){
+            log.error("Missing mandatory field userId", user.getUserId());
+            throw new CustomException("Missing mandatory field userId");
+        }
         if(user.getScenarioEurobitsId()!=null){
             Long existingSavedScenario = scenarioEurobitsRepository
                     .countByHumanFriendlyName(user.getScenarioEurobitsId());
