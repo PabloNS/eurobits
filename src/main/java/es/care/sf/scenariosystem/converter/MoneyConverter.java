@@ -19,7 +19,6 @@ public class MoneyConverter implements AttributeConverter<Money, String> {
             return objectMapper.writeValueAsString(meta);
         } catch (JsonProcessingException ex) {
             return null;
-            // or throw an error
         }
     }
 
@@ -28,7 +27,6 @@ public class MoneyConverter implements AttributeConverter<Money, String> {
         try {
             return objectMapper.readValue(dbData, Money.class);
         } catch (IOException ex) {
-            // logger.error("Unexpected IOEx decoding json from database: " + dbData);
             return null;
         }
     }

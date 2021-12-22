@@ -18,7 +18,6 @@ public class JpaConverterJson implements AttributeConverter<Object, String> {
             return objectMapper.writeValueAsString(meta);
         } catch (JsonProcessingException ex) {
             return null;
-            // or throw an error
         }
     }
 
@@ -27,7 +26,6 @@ public class JpaConverterJson implements AttributeConverter<Object, String> {
         try {
             return objectMapper.readValue(dbData, Object.class);
         } catch (IOException ex) {
-            // logger.error("Unexpected IOEx decoding json from database: " + dbData);
             return null;
         }
     }

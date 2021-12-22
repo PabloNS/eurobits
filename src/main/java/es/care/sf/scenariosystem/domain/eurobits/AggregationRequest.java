@@ -1,6 +1,7 @@
 package es.care.sf.scenariosystem.domain.eurobits;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import es.care.sf.scenariosystem.domain.eurobits.privateaggregation.Credential;
 import lombok.*;
 
 import java.util.List;
