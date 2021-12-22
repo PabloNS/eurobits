@@ -11,6 +11,7 @@ import es.care.sf.scenariosystem.exception.CustomException;
 import es.care.sf.scenariosystem.repository.ExecutionRepository;
 import es.care.sf.scenariosystem.repository.ScenarioEurobitsRepository;
 import es.care.sf.scenariosystem.service.UserService;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +21,7 @@ import java.util.List;
 
 @Service
 @Slf4j
+@AllArgsConstructor
 public class ScenarioService {
 
     private ScenarioEurobitsRepository scenarioEurobitsRepository;
@@ -27,13 +29,6 @@ public class ScenarioService {
     private UserService userService;
 
     private ExecutionRepository executionRepository;
-
-    public ScenarioService(ScenarioEurobitsRepository scenarioEurobitsRepository, UserService userService,
-                           ExecutionRepository executionRepository){
-        this.scenarioEurobitsRepository = scenarioEurobitsRepository;
-        this.userService = userService;
-        this.executionRepository = executionRepository;
-    }
 
     public ScenarioEurobits getExampleScenarioEurobits(int number) throws Exception {
         ObjectMapper mapper = new ObjectMapper();

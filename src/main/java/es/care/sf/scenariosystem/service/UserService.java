@@ -3,6 +3,7 @@ package es.care.sf.scenariosystem.service;
 import es.care.sf.scenariosystem.domain.user.User;
 import es.care.sf.scenariosystem.exception.CustomException;
 import es.care.sf.scenariosystem.repository.UserRepository;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -11,13 +12,10 @@ import java.util.Optional;
 
 @Service
 @Slf4j
+@AllArgsConstructor
 public class UserService {
 
     private UserRepository userRepository;
-
-    public UserService(UserRepository userRepository){
-        this.userRepository = userRepository;
-    }
 
     public List<User> getAllUser() {
         return userRepository.findAll();

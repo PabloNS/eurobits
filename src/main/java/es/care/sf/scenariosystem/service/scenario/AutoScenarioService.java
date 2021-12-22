@@ -7,6 +7,7 @@ import es.care.sf.scenariosystem.domain.eurobits.privateaggregation.Money;
 import es.care.sf.scenariosystem.domain.eurobits.privateaggregation.Transaction;
 import es.care.sf.scenariosystem.domain.user.User;
 import es.care.sf.scenariosystem.service.UserService;
+import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -15,16 +16,12 @@ import java.util.*;
 
 @Service
 @Slf4j
+@AllArgsConstructor
 public class AutoScenarioService {
 
     private ScenarioService scenarioService;
 
     private UserService userService;
-
-    public AutoScenarioService(UserService userService, ScenarioService scenarioService){
-        this.userService = userService;
-        this.scenarioService = scenarioService;
-    }
 
     private String generateRandomString(){
         return UUID.randomUUID().toString();

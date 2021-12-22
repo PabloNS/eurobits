@@ -9,6 +9,8 @@ import es.care.sf.scenariosystem.domain.execution.Execution;
 import es.care.sf.scenariosystem.domain.eurobits.ScenarioEurobits;
 import es.care.sf.scenariosystem.service.execution.ExecutionService;
 import es.care.sf.scenariosystem.service.scenario.ScenarioService;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -19,25 +21,12 @@ import java.util.List;
 @RestController
 @RequestMapping("scenario")
 @Slf4j
+@AllArgsConstructor
 public class ScenarioController {
 
     private ScenarioService scenarioService;
 
     private ExecutionService executionService;
-
-    public ScenarioController(ScenarioService scenarioService, ExecutionService executionService){
-        this.scenarioService = scenarioService;
-        this.executionService = executionService;
-    }
-
-    @GetMapping("eurobits/example/{number}")
-    public ResponseEntity getExampleEurobitsScenario(@PathVariable int number){
-        try {
-            return new ResponseEntity(scenarioService.getExampleScenarioEurobits(number), HttpStatus.OK);
-        } catch (Exception e) {
-            return new ResponseEntity(new ExceptionResponse(e.getLocalizedMessage()), HttpStatus.INTERNAL_SERVER_ERROR);
-        }
-    }
 
     @PostMapping("eurobits")
     public ResponseEntity createScenario(@RequestBody ScenarioEurobits scenarioEurobits){
@@ -56,7 +45,11 @@ public class ScenarioController {
         return new ResponseEntity(scenarioEurobits, HttpStatus.OK);
     }
 
-    //This endpoint is the equivalent first Eurobits request where we get the execId
+    @PostMapping("eurobits/api/login")
+    public ResponseEntity login(@RequestBody LoginDto loginDto){
+        return new ResponseEntity(LoginResponse.builder().build(), HttpStatus.OK);
+    }
+
     @PostMapping("eurobits/api/aggregation")
     public ResponseEntity startAggregationScenario(@RequestBody AggregationRequest aggregationRequest){
         try{
@@ -77,11 +70,6 @@ public class ScenarioController {
                                      @RequestBody Unblock2FADto unblock2FADto){
         executionService.unblockTwoFactorAuthentication(executionId);
         return new ResponseEntity(HttpStatus.ACCEPTED);
-    }
-
-    @PostMapping("eurobits/api/login")
-    public ResponseEntity login(@RequestBody LoginDto loginDto){
-        return new ResponseEntity(LoginResponse.builder().build(), HttpStatus.OK);
     }
 
     @DeleteMapping("eurobits/api/aggregation/{executionId}")
