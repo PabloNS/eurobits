@@ -2,7 +2,7 @@ package es.care.sf.scenariosystem.controller.user;
 
 import es.care.sf.scenariosystem.domain.user.User;
 import es.care.sf.scenariosystem.exception.CustomException;
-import es.care.sf.scenariosystem.service.UserService;
+import es.care.sf.scenariosystem.service.user.UserService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

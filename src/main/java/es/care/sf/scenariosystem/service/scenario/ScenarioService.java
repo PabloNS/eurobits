@@ -10,7 +10,7 @@ import es.care.sf.scenariosystem.domain.user.User;
 import es.care.sf.scenariosystem.exception.CustomException;
 import es.care.sf.scenariosystem.repository.ExecutionRepository;
 import es.care.sf.scenariosystem.repository.ScenarioEurobitsRepository;
-import es.care.sf.scenariosystem.service.UserService;
+import es.care.sf.scenariosystem.service.user.UserService;
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

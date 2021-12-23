@@ -1,4 +1,4 @@
-package es.care.sf.scenariosystem.service;
+package es.care.sf.scenariosystem.service.user;
 
 import es.care.sf.scenariosystem.domain.user.User;
 import es.care.sf.scenariosystem.exception.CustomException;
