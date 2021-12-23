@@ -85,4 +85,9 @@ public class ScenarioService {
         return AggregationStatusResponse.builder()
                 .executionId(String.valueOf(execution.getId())).build();
     }
+
+    public void deleteScenario(String humanFriendlyName) {
+        ScenarioEurobits scenarioEurobits = getScenario(humanFriendlyName);
+        scenarioEurobitsRepository.delete(scenarioEurobits);
+    }
 }

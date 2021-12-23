@@ -45,6 +45,12 @@ public class ScenarioController {
         return new ResponseEntity(scenarioEurobits, HttpStatus.OK);
     }
 
+    @DeleteMapping("eurobits/{humanFriendlyName}")
+    public ResponseEntity deleteScenario(@PathVariable String humanFriendlyName){
+        scenarioService.deleteScenario(humanFriendlyName);
+        return new ResponseEntity(HttpStatus.OK);
+    }
+
     @PostMapping("eurobits/api/login")
     public ResponseEntity login(@RequestBody LoginDto loginDto){
         return new ResponseEntity(LoginResponse.builder().build(), HttpStatus.OK);
